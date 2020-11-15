@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projection_Operators", "Pro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Partitioning_Operators", "Partitioning_Operators\Partitioning_Operators.csproj", "{07424A53-2DF7-4EFC-BEC7-46259946DF20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cast_And_OfType_Operators", "Cast_And_OfType_Operators\Cast_And_OfType_Operators.csproj", "{0355B373-9BBE-4FD2-8DF6-D977737708BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{07424A53-2DF7-4EFC-BEC7-46259946DF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07424A53-2DF7-4EFC-BEC7-46259946DF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07424A53-2DF7-4EFC-BEC7-46259946DF20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0355B373-9BBE-4FD2-8DF6-D977737708BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0355B373-9BBE-4FD2-8DF6-D977737708BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0355B373-9BBE-4FD2-8DF6-D977737708BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0355B373-9BBE-4FD2-8DF6-D977737708BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
