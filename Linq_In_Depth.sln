@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cast_And_OfType_Operators",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsEnumerable_AsQueryable_Operators", "AsEnumerable_AsQueryable_Operators\AsEnumerable_AsQueryable_Operators.csproj", "{07F29978-2367-46AF-98E3-70C448B9F7B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grouping_Operator", "Grouping_Operators\Grouping_Operator.csproj", "{77C81177-B47C-495F-8DDB-BC21FD4D2763}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{07F29978-2367-46AF-98E3-70C448B9F7B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07F29978-2367-46AF-98E3-70C448B9F7B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07F29978-2367-46AF-98E3-70C448B9F7B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77C81177-B47C-495F-8DDB-BC21FD4D2763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C81177-B47C-495F-8DDB-BC21FD4D2763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C81177-B47C-495F-8DDB-BC21FD4D2763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C81177-B47C-495F-8DDB-BC21FD4D2763}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
