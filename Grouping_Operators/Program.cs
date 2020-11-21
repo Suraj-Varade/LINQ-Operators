@@ -59,6 +59,24 @@ namespace Grouping_Operators
             {
                 Console.WriteLine(group.key + " - - " + string.Join("\n", group.employee.Select(x => x.Name + " " + x.Department + " " + x.Salary)));
             }
+
+            //Group By
+            int[] arrCol = { 1,2,2,3,2,3,2,4,5,6,7,8,9,2,33,44,54,67};
+            //Get the duplicate items
+
+
+            Console.WriteLine("\n\n Get the Duplicate ");
+            var resultIterations = arrCol.GroupBy(x => x);
+            foreach(var item in resultIterations)
+            {
+                //Console.WriteLine("Key ->> "+item.Key + " Iterations ->> "+item.Count());
+                if(item.Count() > 1)
+                {
+                    Console.WriteLine("Item with duplicate values ->> "+item.Key);
+                }
+            }
+
+
             Console.ReadKey();
         }
     }
