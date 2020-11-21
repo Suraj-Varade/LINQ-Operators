@@ -76,6 +76,10 @@ namespace Grouping_Operators
                 }
             }
 
+            //Fetch all the element whose index value is even - Exclude 0
+
+            var getAllEvenIndexedValues = arrCol.Where((x, index) => index % 2 == 0 && index != 0).Select(x=>x);
+            Console.WriteLine("Values at Even index =>> "+string.Join(" ",getAllEvenIndexedValues));
 
             Console.ReadKey();
         }
