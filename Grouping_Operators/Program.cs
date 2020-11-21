@@ -81,6 +81,50 @@ namespace Grouping_Operators
             var getAllEvenIndexedValues = arrCol.Where((x, index) => index % 2 == 0 && index != 0).Select(x=>x);
             Console.WriteLine("Values at Even index =>> "+string.Join(" ",getAllEvenIndexedValues));
 
+
+            //Group by Multiple keys
+
+            Console.WriteLine("*********************** Group Record by Multiple Keys ************************");
+            //Group Employees by Department and Then by Gender.
+            //dynamic resultOfGroupByMultipleKeys = Employee.GetAllEmployees().GroupBy(x => new { x.Department, x.Gender })
+            //                                    .OrderBy(x => x.Key.Department).ThenBy(y => y.Key.Gender)
+            //                                    .Select(g => new
+            //                                    {
+            //                                        Dept = g.Key.Department,
+            //                                        gender = g.Key.Gender,
+            //                                        employees = g.OrderBy(x=>x.Name) 
+            //                                    });
+
+            var resultOfGroupByMultipleKeys = from emp in Employee.GetAllEmployees()
+                                          group emp by new { emp.Department, emp.Gender } into egroup
+                                          orderby egroup.Key.Department, egroup.Key.Gender
+                                          select new {
+                                              Dept = egroup.Key.Department,
+                                              gender = egroup.Key.Gender,
+                                              employees = egroup.OrderBy(x=>x.Name)
+                                          };
+
+
+            Console.WriteLine("\n\n");
+            foreach(var item in resultOfGroupByMultipleKeys)
+            {
+                Console.WriteLine(item.Dept+" department,"+item.gender+" count "+item.employees.Count());
+                Console.WriteLine("----------------------------------");
+                foreach(var e in item.employees)
+                {
+                    Console.WriteLine(e.Name+" - "+e.Department);
+                }
+                Console.WriteLine();
+                Console.WriteLine("----------------------------------");
+            }
+
+
+
+
+
+
+
+
             Console.ReadKey();
         }
     }
