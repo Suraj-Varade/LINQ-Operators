@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsEnumerable_AsQueryable_Op
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grouping_Operator", "Grouping_Operators\Grouping_Operator.csproj", "{77C81177-B47C-495F-8DDB-BC21FD4D2763}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Element_Operators", "Element_Operators\Element_Operators.csproj", "{EAF57AE3-2B46-4D5F-A917-D976ECF68D2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{77C81177-B47C-495F-8DDB-BC21FD4D2763}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77C81177-B47C-495F-8DDB-BC21FD4D2763}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77C81177-B47C-495F-8DDB-BC21FD4D2763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAF57AE3-2B46-4D5F-A917-D976ECF68D2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAF57AE3-2B46-4D5F-A917-D976ECF68D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAF57AE3-2B46-4D5F-A917-D976ECF68D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAF57AE3-2B46-4D5F-A917-D976ECF68D2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
